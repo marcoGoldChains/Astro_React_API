@@ -1,9 +1,5 @@
 ---
-interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
+import Nav from "@components/Nav.astro"
 ---
 
 <!doctype html>
@@ -23,7 +19,9 @@ const { title } = Astro.props;
 		<title>Movies Astro</title>
 	</head>
 	<body>
-
+<Nav />
+<div class="container">
 		<slot />
+	</div>
 	</body>
 </html>
